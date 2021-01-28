@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
   title = 'heroes';
+  hero= 'Superman'
+
+
+  onLike() {
+    alert(`I like ${this.hero}`)
+    this.hero = "Batman";
+  }
 }
+
+
